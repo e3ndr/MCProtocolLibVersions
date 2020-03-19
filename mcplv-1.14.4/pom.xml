@@ -1,55 +1,55 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>xyz.mistrix</groupId>
-		<artifactId>mcplv-parent</artifactId>
-		<version>parent</version>
-		<relativePath>../</relativePath>
-	</parent>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>xyz.mistrix</groupId>
+        <artifactId>mcplv-parent</artifactId>
+        <version>parent</version>
+        <relativePath>../</relativePath>
+    </parent>
 
-	<artifactId>mcplv-1.14.4</artifactId>
-	<version>u1</version>
-	
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.1</version>
-				<executions>
-					<execution>
-						<id>shade</id>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<relocations>
-						<relocation>
-							<pattern>com.github.steveice10</pattern>
-							<shadedPattern>com.github.steveice10.mc1_14_4</shadedPattern>
-						</relocation>
-					</relocations>
-				</configuration>
-	  		</plugin>
-		</plugins>
-	</build>
-	
-	
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
-	
-	<dependencies>
-		<dependency>
-			<groupId>com.github.Steveice10</groupId>
-			<artifactId>MCProtocolLib</artifactId>
-			<version>1.14.4-2</version> <!-- Last 1.14.4 release -->
-		</dependency>
-	</dependencies>
+    <artifactId>mcplv-1.14.4</artifactId>
+    <version>u1</version>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>shade</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <relocations>
+                        <relocation>
+                            <pattern>com.github.steveice10</pattern>
+                            <shadedPattern>com.github.steveice10.mc1_14_4</shadedPattern>
+                        </relocation>
+                    </relocations>
+                </configuration>
+              </plugin>
+        </plugins>
+    </build>
+    
+    
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.github.Steveice10</groupId>
+            <artifactId>MCProtocolLib</artifactId>
+            <version>1.14.4-2</version> <!-- Last 1.14.4 release -->
+        </dependency>
+    </dependencies>
 </project>
