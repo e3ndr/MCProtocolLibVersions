@@ -29,7 +29,7 @@
 					<relocations>
 						<relocation>
 							<pattern>com.github.steveice10</pattern>
-							<shadedPattern>com.github.steveice10.1_13_2</shadedPattern>
+							<shadedPattern>com.github.steveice10.mc1_13_2</shadedPattern>
 						</relocation>
 					</relocations>
 				</configuration>
