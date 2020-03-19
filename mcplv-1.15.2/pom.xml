@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>xyz.mistrix</groupId>
+		<artifactId>mcplv-parent</artifactId>
+		<version>parent</version>
+		<relativePath>../</relativePath>
+	</parent>
+
+	<artifactId>mcplv-1.15.2</artifactId>
+	<version>u1</version>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<id>shade</id>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<relocations>
+						<relocation>
+							<pattern>com.github.steveice10</pattern>
+							<shadedPattern>com.github.steveice10.1_15_2</shadedPattern>
+						</relocation>
+					</relocations>
+				</configuration>
+	  		</plugin>
+		</plugins>
+	</build>
+	
+	
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.github.Steveice10</groupId>
+			<artifactId>MCProtocolLib</artifactId>
+			<version>456613c5ce0a7650348c5382b9243cd4491cc730</version> <!-- 1.15.2 commit -->
+		</dependency>
+	</dependencies>
+</project>
