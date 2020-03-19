@@ -16,7 +16,8 @@ Add the JitPack maven repo:
 </repositories>
 ```
 
-Add your desired version of MCProtocolLib as a dependency, replacing `MCVERSION` with your desired version of Minecraft (ex: `1.15.2`, you can find the supported version list in the _added_ column [here.](https://github.com/mistrix-software/MCProtocolLibVersions/projects/1)):
+Add your desired version of MCProtocolLib as a dependency, replacing `MCVERSION` with your desired version of Minecraft
+(ex: `1.15.2`, you can find the supported version list in the _added_ column [here.](https://github.com/mistrix-software/MCProtocolLibVersions/projects/1)):
 ```xml
 <dependencies>
 	<dependency>
