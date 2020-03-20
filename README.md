@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/mistrix-software/MCProtocolLibVersions.svg)](https://jitpack.io/#mistrix-software/MCProtocolLibVersions)
+[![](https://jitpack.io/v/mistrix-software/MCProtocolLibVersions.svg)](https://jitpack.io/#mistrix-software/MCProtocolLibVersions) [![](https://jitci.com/gh/mistrix-software/MCProtocolLibVersions/svg)](https://jitci.com/gh/mistrix-software/MCProtocolLibVersions)
 
 # MCProtocolLibVersions
 A simple JitPack repository to allow better usage of @Steveice10's MCProtocolLib
