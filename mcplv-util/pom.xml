@@ -7,7 +7,7 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>mcplv-1.13.2</artifactId>
+    <artifactId>mcplv-util</artifactId>
     
     <build>
         <plugins>
@@ -41,44 +41,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.1</version>
-                <executions>
-                    <execution>
-                        <id>shade</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <relocations>
-                        <relocation>
-                            <pattern>com.github.steveice10</pattern>
-                            <shadedPattern>com.github.steveice10.mc1_13_2</shadedPattern>
-                        </relocation>
-                    </relocations>
-                </configuration>
-              </plugin>
         </plugins>
     </build>
-    
-    
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
-    
-    <dependencies>
-        <dependency>
-            <groupId>com.github.Steveice10</groupId>
-            <artifactId>MCProtocolLib</artifactId>
-            <version>75697372405d74dd84656ccd72f20975bbecba62</version> <!-- Last 1.13.2 commit ? -->
-        </dependency>
-    </dependencies>
 </project>
