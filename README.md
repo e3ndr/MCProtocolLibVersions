@@ -23,7 +23,7 @@ Add your desired version of MCProtocolLib as a dependency, replacing `MCVERSION`
 	<dependency>
 	    <groupId>com.github.mistrix-software.MCProtocolLibVersions</groupId>
 		<artifactId>mcplv-MCVERSION</artifactId>
-		<version>u1.1</version>
+		<version>u2</version>
 	</dependency>
 </dependencies>
 ```
@@ -33,11 +33,22 @@ or add all supported versions:
 	<dependency>
 	    <groupId>com.github.mistrix-software</groupId>
 		<artifactId>MCProtocolLibVersions</artifactId>
-		<version>u1.1</version>
+		<version>u2</version>
 	</dependency>
 </dependencies>
 ```
-You can always revert to an older mcplv release by replacing u1.1 with the desired version (even commit hashes!)
+util dependency:
+```xml
+<dependencies>
+	<dependency>
+	    <groupId>com.github.mistrix-software.MCProtocolLibVersions</groupId>
+		<artifactId>mcplv-util</artifactId>
+		<version>u2</version>
+	</dependency>
+</dependencies>
+```
+
+You can always revert to an older mcplv release by replacing u2 with the desired version (even commit hashes!)
 
 # Contributing
 Want to contribute and add more versions? Fork this repo, add more maven modules configured with the proper versions and make a pr.
