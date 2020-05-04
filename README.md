@@ -23,7 +23,7 @@ Add your desired version of MCProtocolLib as a dependency, replacing `MCVERSION`
     <dependency>
         <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
         <artifactId>mcplv-MCVERSION</artifactId>
-        <version>u2.1</version>
+        <version>u3</version>
     </dependency>
 </dependencies>
 ```
@@ -33,7 +33,7 @@ or add all supported versions:
     <dependency>
         <groupId>com.github.e3ndr</groupId>
         <artifactId>MCProtocolLibVersions</artifactId>
-        <version>u2.1</version>
+        <version>u3</version>
     </dependency>
 </dependencies>
 ```
@@ -43,7 +43,7 @@ util dependency:
     <dependency>
         <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
         <artifactId>mcplv-util</artifactId>
-        <version>u2.1</version>
+        <version>u3</version>
     </dependency>
 </dependencies>
 ```
