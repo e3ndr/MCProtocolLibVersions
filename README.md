@@ -9,10 +9,10 @@ A simple JitPack repository to allow better usage of @Steveice10's MCProtocolLib
 Add the JitPack maven repo:
 ```xml
 <repositories>
-<repository>
-	<id>jitpack.io</id>
-	<url>https://jitpack.io</url>
-</repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>
 ```
 
@@ -20,31 +20,31 @@ Add your desired version of MCProtocolLib as a dependency, replacing `MCVERSION`
 (ex: `1.15.2`, you can find the supported version list in the _added_ column [here](https://github.com/e3ndr/MCProtocolLibVersions/projects/1).):
 ```xml
 <dependencies>
-	<dependency>
-	    <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
-		<artifactId>mcplv-MCVERSION</artifactId>
-		<version>u2.1</version>
-	</dependency>
+    <dependency>
+        <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
+        <artifactId>mcplv-MCVERSION</artifactId>
+        <version>u2.1</version>
+    </dependency>
 </dependencies>
 ```
 or add all supported versions:
 ```xml
 <dependencies>
-	<dependency>
-	    <groupId>com.github.e3ndr</groupId>
-		<artifactId>MCProtocolLibVersions</artifactId>
-		<version>u2.1</version>
-	</dependency>
+    <dependency>
+        <groupId>com.github.e3ndr</groupId>
+        <artifactId>MCProtocolLibVersions</artifactId>
+        <version>u2.1</version>
+    </dependency>
 </dependencies>
 ```
 util dependency:
 ```xml
 <dependencies>
-	<dependency>
-	    <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
-		<artifactId>mcplv-util</artifactId>
-		<version>u2.1</version>
-	</dependency>
+    <dependency>
+        <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
+        <artifactId>mcplv-util</artifactId>
+        <version>u2.1</version>
+    </dependency>
 </dependencies>
 ```
 
