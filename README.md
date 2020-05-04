@@ -1,9 +1,9 @@
-[![](https://jitpack.io/v/mistrix-software/MCProtocolLibVersions.svg)](https://jitpack.io/#mistrix-software/MCProtocolLibVersions) [![](https://jitci.com/gh/mistrix-software/MCProtocolLibVersions/svg)](https://jitci.com/gh/mistrix-software/MCProtocolLibVersions)
+[![](https://jitpack.io/v/e3ndr/MCProtocolLibVersions.svg)](https://jitpack.io/#e3ndr/MCProtocolLibVersions) [![](https://jitci.com/gh/e3ndr/MCProtocolLibVersions/svg)](https://jitci.com/gh/e3ndr/MCProtocolLibVersions)
 
 # MCProtocolLibVersions
 A simple JitPack repository to allow better usage of @Steveice10's MCProtocolLib
 
-[The JitPack for this repo](https://jitpack.io/#mistrix-software/MCProtocolLibVersions/)
+[The JitPack for this repo](https://jitpack.io/#e3ndr/MCProtocolLibVersions/)
 
 # Usage
 Add the JitPack maven repo:
@@ -17,11 +17,11 @@ Add the JitPack maven repo:
 ```
 
 Add your desired version of MCProtocolLib as a dependency, replacing `MCVERSION` with your desired version of Minecraft.
-(ex: `1.15.2`, you can find the supported version list in the _added_ column [here](https://github.com/mistrix-software/MCProtocolLibVersions/projects/1).):
+(ex: `1.15.2`, you can find the supported version list in the _added_ column [here](https://github.com/e3ndr/MCProtocolLibVersions/projects/1).):
 ```xml
 <dependencies>
 	<dependency>
-	    <groupId>com.github.mistrix-software.MCProtocolLibVersions</groupId>
+	    <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
 		<artifactId>mcplv-MCVERSION</artifactId>
 		<version>u2.1</version>
 	</dependency>
@@ -31,7 +31,7 @@ or add all supported versions:
 ```xml
 <dependencies>
 	<dependency>
-	    <groupId>com.github.mistrix-software</groupId>
+	    <groupId>com.github.e3ndr</groupId>
 		<artifactId>MCProtocolLibVersions</artifactId>
 		<version>u2.1</version>
 	</dependency>
@@ -41,7 +41,7 @@ util dependency:
 ```xml
 <dependencies>
 	<dependency>
-	    <groupId>com.github.mistrix-software.MCProtocolLibVersions</groupId>
+	    <groupId>com.github.e3ndr.MCProtocolLibVersions</groupId>
 		<artifactId>mcplv-util</artifactId>
 		<version>u2.1</version>
 	</dependency>
