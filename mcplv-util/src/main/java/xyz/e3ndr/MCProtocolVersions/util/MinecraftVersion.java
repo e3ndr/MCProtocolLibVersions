@@ -1,19 +1,17 @@
-/**
- * 2020 Mistrix Software
- * 
- * https://mistrix.xyz
- * https://github.com/mistrix-software/MCProtocolLibVersions
- * 
- * Proudly licensed under MIT.
- */
-package xyz.mistrix.MCProtocolVersions.Util;
+package xyz.e3ndr.MCProtocolVersions.util;
 
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
 public enum MinecraftVersion {
 	mc1_15_2("1.15.2", 578, "com.github.steveice10.mc1_15_2"),
 	mc1_14_4("1.14.4", 498, "com.github.steveice10.mc1_14_4"),
 	mc1_13_2("1.13.2", 404, "com.github.steveice10.mc1_13_2"),
-	mc1_12_2("1.12.2", 340, "com.github.steveice10.mc1_12_2");
-	
+	mc1_12_2("1.12.2", 340, "com.github.steveice10.mc1_12_2"),
+    mc1_8("1.8", 47, "com.github.steveice10.mc1_8");
+    
 	private String version;
 	private int protocol;
 	private String versionPackage;
@@ -51,36 +49,5 @@ public enum MinecraftVersion {
 		
 		return null;
 	}
-	
-	/**
-	 * Gets the version package.
-	 *
-	 * @return the version package
-	 */
-	public String getVersionPackage() {
-		return this.versionPackage;
-	}
-	
-	/**
-	 * Gets the version.
-	 *
-	 * @return the version
-	 */
-	public String getVersion() {
-		return this.version;
-	}
-	
-	/**
-	 * Gets the protocol.
-	 *
-	 * @return the protocol
-	 */
-	public int getProtocol() {
-		return this.protocol;
-	}
-	
-	@Override
-	public String toString() {
-		return "MinecraftVersion(version=" + this.version + ", protocol=" + this.protocol + ", versionPackage=" + this.versionPackage + ")";
-	}
+
 }

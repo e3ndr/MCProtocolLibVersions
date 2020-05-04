@@ -1,14 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>xyz.mistrix</groupId>
+        <groupId>xyz.e3ndr</groupId>
         <artifactId>mcplv-parent</artifactId>
         <version>${revision}</version>
         <relativePath>../</relativePath>
     </parent>
 
+    <properties>
+        <minecraft>1_15_2</minecraft>
+    </properties>
+
     <artifactId>mcplv-1.15.2</artifactId>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -58,27 +62,26 @@
                     <relocations>
                         <relocation>
                             <pattern>com.github.steveice10</pattern>
-                            <shadedPattern>com.github.steveice10.mc1_15_2</shadedPattern>
+                            <shadedPattern>com.github.steveice10.mc${minecraft}</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
-              </plugin>
+            </plugin>
         </plugins>
     </build>
-    
-    
+
     <repositories>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
     </repositories>
-    
+
     <dependencies>
         <dependency>
             <groupId>com.github.Steveice10</groupId>
             <artifactId>MCProtocolLib</artifactId>
-            <version>456613c5ce0a7650348c5382b9243cd4491cc730</version> <!-- 1.15.2 commit -->
+            <version>5ae680aaeb0539629c113c262df1e5894b3ddcd1</version> <!-- 1.15.2 commit -->
         </dependency>
     </dependencies>
 </project>
