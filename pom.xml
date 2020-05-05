@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>xyz.e3ndr</groupId>
     <artifactId>mcplv-parent</artifactId>
-    <version>${revision}</version>
+    <version>u3.1</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -13,9 +13,5 @@
         <module>mcplv-1.13.2</module>
         <module>mcplv-1.12.2</module>
     </modules>
-
-    <properties>
-        <revision>u3</revision>
-    </properties>
 
 </project>

@@ -3,12 +3,12 @@
     <parent>
         <groupId>xyz.e3ndr</groupId>
         <artifactId>mcplv-parent</artifactId>
-        <version>${revision}</version>
+        <version>u3.1</version>
         <relativePath>../</relativePath>
     </parent>
 
     <properties>
-        <minecraft>1_14_4</minecraft>
+        <revision>u3.1</revision>
     </properties>
 
     <artifactId>mcplv-1.14.4</artifactId>

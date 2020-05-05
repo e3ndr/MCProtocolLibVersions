@@ -3,7 +3,7 @@
     <parent>
         <groupId>xyz.e3ndr</groupId>
         <artifactId>mcplv-parent</artifactId>
-        <version>${revision}</version>
+        <version>u3.1</version>
         <relativePath>../</relativePath>
     </parent>
 
