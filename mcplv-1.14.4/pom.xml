@@ -7,10 +7,6 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <properties>
-        <revision>u3.1</revision>
-    </properties>
-
     <artifactId>mcplv-1.14.4</artifactId>
 
     <build>
@@ -62,7 +58,7 @@
                     <relocations>
                         <relocation>
                             <pattern>com.github.steveice10</pattern>
-                            <shadedPattern>com.github.steveice10.mc${minecraft}</shadedPattern>
+                            <shadedPattern>com.github.steveice10.mc1_14_4</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
